@@ -88,6 +88,7 @@ Again, I must declare that these source codes are not written by me, please refe
 
 Note:
 As illustrated in the author's blog, all the training codes use the small dataset in sklearn, Digits dataset.
+
 | Real Image in Digits dataset (dimension is 8x8)| 
 | ---------- |
 | ![DIGIT](results/_Digit_real_image.png)|
@@ -96,45 +97,53 @@ As illustrated in the author's blog, all the training codes use the small datase
 
 You can simply run the following scripts respectively to see the loss curve and the corresponding geneartion in the training process:
 
+-----------------------------------------
 1. AutoRegressive Models
 `python autoregressive_model.py`
+
 | Objective Loss Curve| Generation in training process |
 | ---------- | ---------- |
 | ![arm_loss](results/ARM_loss_val_curve.png)| ![arm_gif](results/ARM_training.gif)|
 
-
+-----------------------------------------
 2. Flow-based Models
 `python flow_based_model_realnvp.py`
+
 | Objective Loss Curve| Generation in training process |
 | ---------- | ---------- |
 | ![realnvp_loss](results/RealNVP_loss_val_curve.png)| ![realnvp_gif](results/RealNVP_training.gif)|
 
+-----------------------------------------
+3. Energy-based Models
+`python energy_based_model.py`
 
-3. Energy-based Models `python energy_based_model.py`
 | Objective Loss Curve| Generation in training process |
 | ---------- | ---------- |
 | ![ebm_loss](results/EBM_loss_val_curve.png)| ![ebm_gif](results/EBM_training.gif)|
 
-
+-----------------------------------------
 4. Score-based Generative Models - Score Matching
 `python score_matching.py`
+
 | Objective Loss Curve| Generation in training process |
 | ---------- | ---------- |
 | ![scm_loss](results/ScM_loss_val_curve.png)| ![scm_gif](results/ScM_training.gif)|
 
-
+-----------------------------------------
 5. Score-based Generative Models - SBGM by SDE 
 `python score_based_generative_model.py`
+
 | Objective Loss Curve| Generation in training process |
 | ---------- | ---------- |
 | ![sbgm_loss](results/SBGM_loss_val_curve.png)| ![sbgm_gif](results/SBGM_training.gif)|
 
-
+-----------------------------------------
 6. Latent Variable Models - Diffusion-based Model (DDPM)
 `python score_based_generative_model.py`
+
 | Objective Loss Curve| Generation in training process |
 | ---------- | ---------- |
 | ![ddpm_loss](results/DDPM_10_0.3_loss_val_curve.png)| ![ddpm_gif](results/DDPM_training.gif)|
 
-
+-----------------------------------------
 As shown above, although the quality of image generations may not be very realistic, we still can see that the models gradually capture the underlying distribution $P_{\theta}(x)$ as the training stage progresses.
