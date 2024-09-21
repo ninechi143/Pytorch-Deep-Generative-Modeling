@@ -98,7 +98,8 @@ As illustrated in the author's blog, all the training codes use the small datase
 You can simply run the following scripts respectively to see the loss curve and the corresponding geneartion in the training process:
 
 -----------------------------------------
-1. AutoRegressive Models
+**1. AutoRegressive Models**
+
 `python autoregressive_model.py`
 
 | Objective Loss Curve| Generation in training process |
@@ -106,7 +107,8 @@ You can simply run the following scripts respectively to see the loss curve and 
 | ![arm_loss](results/ARM_loss_val_curve.png)| ![arm_gif](results/ARM_training.gif)|
 
 -----------------------------------------
-2. Flow-based Models
+**2. Flow-based Models**
+
 `python flow_based_model_realnvp.py`
 
 | Objective Loss Curve| Generation in training process |
@@ -114,7 +116,8 @@ You can simply run the following scripts respectively to see the loss curve and 
 | ![realnvp_loss](results/RealNVP_loss_val_curve.png)| ![realnvp_gif](results/RealNVP_training.gif)|
 
 -----------------------------------------
-3. Energy-based Models
+**3. Energy-based Models**
+
 `python energy_based_model.py`
 
 | Objective Loss Curve| Generation in training process |
@@ -122,7 +125,8 @@ You can simply run the following scripts respectively to see the loss curve and 
 | ![ebm_loss](results/EBM_loss_val_curve.png)| ![ebm_gif](results/EBM_training.gif)|
 
 -----------------------------------------
-4. Score-based Generative Models - Score Matching
+**4. Score-based Generative Models - Score Matching**
+
 `python score_matching.py`
 
 | Objective Loss Curve| Generation in training process |
@@ -130,7 +134,8 @@ You can simply run the following scripts respectively to see the loss curve and 
 | ![scm_loss](results/ScM_loss_val_curve.png)| ![scm_gif](results/ScM_training.gif)|
 
 -----------------------------------------
-5. Score-based Generative Models - SBGM by SDE 
+**5. Score-based Generative Models - SBGM by SDE**
+
 `python score_based_generative_model.py`
 
 | Objective Loss Curve| Generation in training process |
@@ -138,7 +143,8 @@ You can simply run the following scripts respectively to see the loss curve and 
 | ![sbgm_loss](results/SBGM_loss_val_curve.png)| ![sbgm_gif](results/SBGM_training.gif)|
 
 -----------------------------------------
-6. Latent Variable Models - Diffusion-based Model (DDPM)
+**6. Latent Variable Models - Diffusion-based Model (DDPM)**
+
 `python score_based_generative_model.py`
 
 | Objective Loss Curve| Generation in training process |
